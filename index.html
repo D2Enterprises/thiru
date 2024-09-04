@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Background Video -->
+    <video autoplay muted loop id="background-video">
+        <source src="C:\Users\student.ITPRO-48\Downloads\chika-dance-kaguyasama-love-is-war-moewalls-com.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    
+    <!-- Existing Content -->
+    <div class="btn">
+        <div class="btn__indicator">
+            <div class="btn__icon-container">
+                <i class="btn__icon fa-solid fa-sun"></i>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Top Container -->
+    <div class="top-container">
+        <!-- Search and Sidebar Container -->
+        <div class="search-sidebar-container">
+            <div class="search-bar-container">
+                <input type="text" id="search-bar" placeholder="Search products...">
+                <button id="search-btn"><i class="fas fa-search"></i> Search</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div id="app">
+        <section id="home" class="page visible">
+            <h1>Welcome to Home</h1>
+            <p>Discover amazing products and more.</p>
+        </section>
+    </div>
+
+    <!-- Bottom Dock -->
+    <div class="dock">
+        <button class="dock-item" onclick="navigateTo('index.html')"><i class="fas fa-home"></i> Home</button>
+        <button class="dock-item" onclick="navigateTo('shop.html')"><i class="fas fa-store"></i> Shop</button>
+        <button class="dock-item" onclick="navigateTo('cart.html')"><i class="fas fa-shopping-cart"></i> Cart</button>
+    </div>
+
+    <!-- Cart Dynamic Island -->
+    <div class="dynamic-island" id="dynamic-island">
+        <div class="cart-icon">🛒</div>
+        <div class="cart-details">
+            <p class="message">Product added to cart!</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
